@@ -1,0 +1,27 @@
+{% extends 'themes/' ~ flextype.registry.get('plugins.site.settings.theme') ~ '/templates/partials/base.html' %}
+
+{% block content %}
+
+    {% set locale = flextype.entries.fetch('locale/' ~ request.getUri().getPath()|split('/').1) %}
+    {% set book = flextype.entries.fetch('locale/' ~ request.getUri().getPath()|split('/').1 ~ '/' ~ request.getUri().getPath()|split('/').2) %}
+
+    <div class="text-center uppercase mb-10">
+        <h1 class="text-6xl font-bold tracking-wider">{{ entry.title }}</h1>
+        <div class="text-xl"><a class="hover:text-gray-700" href="{{ url() }}">BIBLE</a> / <a class="hover:text-gray-700" href="{{ url() }}/{{ locale.id }}">{{ locale.title }}</a> / <a class="hover:text-gray-700" href="{{ url() }}/{{ book.id }}">{{ book.title }}</a></div>
+    </div>
+
+    {% set cacheID = strings(entry.id).hash().toString() %}
+
+    {% if (flextype.cache.has(cacheID)) %}
+        {% set items = flextype.cache.get(cacheID) %}
+    {% else %}
+        {% set items = flextype.entries.fetch(entry.id, {'collection': true}).sortBy('slug', 'asc') %}
+        {% do flextype.cache.set(cacheID, items) %}
+    {% endif %}
+
+    <ul>
+    {% for item in items %}
+        <li class="mb-3"><a href="{{ url() }}/{{ item.id }}">{{ item.slug }}: {{ item.content }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

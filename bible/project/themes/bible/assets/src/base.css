@@ -1,0 +1,13 @@
+html, body {
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+    background: #f8f9fb;
+    color: #090e24;
+}
+
+
+.columns {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
