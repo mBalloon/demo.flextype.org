@@ -2,11 +2,8 @@
 .composer
 composer.lock
 package-lock.json
-vendor/
 node_modules/
-dist/
 project/entries/
-
 
 # Flextype Site Specific
 var/
