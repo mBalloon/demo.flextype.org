@@ -3,7 +3,6 @@
 composer.lock
 package-lock.json
 node_modules/
-project/entries/
 
 # Flextype Site Specific
 var/
