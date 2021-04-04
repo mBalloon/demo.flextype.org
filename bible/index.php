@@ -157,9 +157,11 @@ if ($_SERVER["REQUEST_URI"] == '/bible/admin/tools/cache') {
  */
 include __DIR__ . '/src/flextype/bootstrap.php';
 
-echo '<div style="width:100%; color: #828282; padding-top: 6px; padding-bottom: 6px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, Cantarell, sans-serif, Arial; font-size: 12px; position: fixed; text-align: center; left: 0px; bottom: 0px; z-index: 9999; display: block; background: white;">';
+echo '<div style="border-top: 1px solid #333; position: fixed; left: 0; bottom: 0; width:100%; color: #333; padding-top: 8px; padding-bottom: 8px; font-family: -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, Cantarell, sans-serif, Arial; font-size: 11px; text-align: center; display: block; background: white;">';
 echo 'BIBLE | PAGES TOTAL: 517349 | ';
 echo 'ELAPSED TIME: ' . Debug::elapsedTime('flexype-time') . 'ms | MEMORY USAGE: '. Debug::memoryUsage('flexype-memory');
 echo ' | ';
 echo 'POWERED BY <a href="https://flextype.org" class="underline">FLEXTYPE</a>';
+echo ' | ';
+echo '<a href="https://demo.flextype.org" class="underline">MORE EXAMPLES</a>';
 echo '</div>';
