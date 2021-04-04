@@ -133,14 +133,21 @@ version_compare($ver = PHP_VERSION, $req = FLEXTYPE_MINIMUM_PHP, '<') and exit(s
  */
 $flextypeLoader = require_once $flextypeAutoload;
 
+if (! function_exists('str_contains')) {
+    function str_contains(string $haystack , string $needle): bool
+    {
+        return strings($haystack)->contains($needle);
+    }
+}
+
 function blockRequest() {
     echo('<center style="margin-top: 100px; font-family: arial;"><h1>This action is not allowed for current demo.</h1> <a style="text-decoration: none; font-weight: bold; text-transform: uppercase; color: black;" href="javascript:history.go(-1);">&lt; Go back</a></center>');
     die();
 }
 
 if (($_POST || $_FILES) &&
-    (!str_contains($_SERVER["REQUEST_URI"], 'admin/accounts/logout') &&
-     !str_contains($_SERVER["REQUEST_URI"], 'admin/accounts/login')) {
+    (! str_contains($_SERVER["REQUEST_URI"], 'admin/accounts/logout') &&
+     ! str_contains($_SERVER["REQUEST_URI"], 'admin/accounts/login'))) {
        blockRequest();
 }
 
