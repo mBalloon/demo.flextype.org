@@ -139,8 +139,8 @@ function blockRequest() {
 }
 
 if (($_POST || $_FILES) &&
-    ($_SERVER["REQUEST_URI"] != '/bible/admin/accounts/logout' &&
-     $_SERVER["REQUEST_URI"] != '/bible/admin/accounts/login')) {
+    (!str_contains($_SERVER["REQUEST_URI"], 'admin/accounts/logout') &&
+     !str_contains($_SERVER["REQUEST_URI"], 'admin/accounts/login')) {
        blockRequest();
 }
 
