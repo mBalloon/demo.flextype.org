@@ -161,7 +161,7 @@ echo '<div style="border-top: 1px solid #333; position: fixed; left: 0; bottom: 
 echo 'BIBLE | PAGES TOTAL: 517349 | ';
 echo 'ELAPSED TIME: ' . Debug::elapsedTime('flexype-time') . 'ms | MEMORY USAGE: '. Debug::memoryUsage('flexype-memory');
 echo ' | ';
-echo 'POWERED BY <a href="https://flextype.org" class="underline">FLEXTYPE</a>';
+echo 'POWERED BY <a href="https://flextype.org" style="color: #333; text-decoration: underline;">FLEXTYPE</a>';
 echo ' | ';
-echo '<a href="https://demo.flextype.org" class="underline">MORE EXAMPLES</a>';
+echo '<a href="https://demo.flextype.org" style="color: #333; text-decoration: underline;">MORE EXAMPLES</a>';
 echo '</div>';

@@ -1,0 +1,6 @@
+email: demo@flextype.org
+registered_at: '08-03-2021 09:44'
+uuid: 3c3fbe57-566f-41b7-8082-a160a0437456
+hashed_password: $2y$10$/Nk9gUk3YLuJaVA3sp2Pe.zzSMjssNYeNFmQCxYmbt25v3qd1WplK
+roles: admin
+state: enabled
