@@ -437,6 +437,7 @@ class ComposerStaticInita70ef0beb596cb909efa6d978cc08753
 
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Flextype\\Foundation\\Cors' => __DIR__ . '/../..' . '/src/flextype/Foundation/Cors.php',
         'Flextype\\Foundation\\Entries\\Entries' => __DIR__ . '/../..' . '/src/flextype/Foundation/Entries/Entries.php',
         'Flextype\\Foundation\\Flextype' => __DIR__ . '/../..' . '/src/flextype/Foundation/Flextype.php',

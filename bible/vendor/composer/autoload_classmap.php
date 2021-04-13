@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Flextype\\Foundation\\Cors' => $baseDir . '/src/flextype/Foundation/Cors.php',
     'Flextype\\Foundation\\Entries\\Entries' => $baseDir . '/src/flextype/Foundation/Entries/Entries.php',
     'Flextype\\Foundation\\Flextype' => $baseDir . '/src/flextype/Foundation/Flextype.php',
