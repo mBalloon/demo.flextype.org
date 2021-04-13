@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
-    'PHPDocsMD' => array($vendorDir . '/victorjonsson/markdowndocs/src'),
 );

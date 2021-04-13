@@ -326,13 +326,11 @@ class Plugins
 
         // Show alert if dependencies are not installed properly
         $diff = array_diff_key($nonVerifiedPlugins, $verifiedPlugins);
-
         if (count($diff) > 0) {
             echo '<b>Dependencies need to be installed properly for this plugins:</b>';
             echo '<ul>';
             foreach ($diff as $pluginName => $pluginData) {
-                echo '<li>' . $pluginName .'</li>';
-                echo '<pre>' . print_r($nonVerifiedPlugins[$pluginName]['manifest']['dependencies']) . '</pre>';
+                echo '<li>' . $pluginName . '</li>';
             }
 
             echo '</ul>';

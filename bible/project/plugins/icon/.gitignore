@@ -10,7 +10,6 @@ var/
 # OS Generated
 .DS_Store*
 ehthumbs.db
-
 Thumbs.db
 *.swp
 

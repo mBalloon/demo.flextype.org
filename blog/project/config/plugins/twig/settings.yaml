@@ -17,7 +17,7 @@ enabled: true
 #
 # - extensions   Flextype Twig Extension to load.
 auto_reload: true
-cache: false
+cache: true
 debug: false
 charset: "UTF-8"
 extensions: ['I18n', 'Filesystem', 'Csrf', 'Constants', 'Strings', 'Arrays', 'Flextype', 'Filters', 'Url']
