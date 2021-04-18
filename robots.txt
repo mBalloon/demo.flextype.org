@@ -1,4 +1,5 @@
 User-agent: *
+Crawl-delay: 10
 Disallow: /src/
 Disallow: /project/
 Disallow: /vendor/
@@ -11,6 +12,10 @@ Disallow: /
 
 User-agent: MauiBot (crawler.feedback+wc@gmail.com)
 Disallow: /
+Disallow: /bible
+Disallow: /bible/
+Disallow: /blog
+Disallow: /blog/
 
 User-agent: MJ12bot
 Disallow: /
